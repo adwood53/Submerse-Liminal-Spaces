@@ -1,2 +1,2 @@
-# Submerse-Liminal-Spaces
-The Repo for the Submerse Liminal Spaces Unity Project
+# Submerse
+The Unity Project files for Submerse: Liminal Spaces https://www.submersedmu.cargo.site

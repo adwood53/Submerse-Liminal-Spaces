@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Book.unity
+    guid: 59db24997c597dc4e9a37f8c919eff2c
+  - enabled: 1
+    path: Assets/Scenes/Rooms/Tutorial/2.unity
+    guid: ae7f1a13515fe8e49918e7c4d0612ba8
+  - enabled: 1
+    path: Assets/Scenes/Rooms/Adam & Irina/4.unity
+    guid: f6ef72fbc81a6894abb0dfafcaf37f8b
+  - enabled: 1
+    path: Assets/Scenes/Rooms/Anthony/6.unity
+    guid: bee4c0b1b464c7f4792296c4887de876
+  - enabled: 1
+    path: Assets/Scenes/Rooms/Marina/8.unity
+    guid: f0de32129ae62df48b9bc845836ae5d5
+  - enabled: 1
+    path: Assets/Scenes/Rooms/Naddin/10.unity
+    guid: 93ae3a8007b545445803644c33205cf6
+  m_configObjects: {}
