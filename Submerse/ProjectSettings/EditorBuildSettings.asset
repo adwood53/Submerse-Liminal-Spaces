@@ -20,7 +20,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Rooms/Marina/8.unity
     guid: f0de32129ae62df48b9bc845836ae5d5
-  - enabled: 1
-    path: Assets/Scenes/Rooms/Naddin/10.unity
-    guid: 93ae3a8007b545445803644c33205cf6
   m_configObjects: {}
