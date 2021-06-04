@@ -63,6 +63,7 @@ public class SceneLoader : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode) //This method runs when a scene has been loaded
     {
+        cam.enabled = true;
         SceneManager.SetActiveScene(SceneManager.GetSceneByName(book.currentPage.ToString()));
         anim.SetTrigger("ToggleClose");
         sceneLoaded = true;
@@ -73,6 +74,8 @@ public class SceneLoader : MonoBehaviour
 
     void OnSceneUnloaded(Scene scene) // This method runs when a scene is unloaded
     {
+        cam.GetComponentInChildren<CinemachinePOVExtension>().Recenter();
+        cam.enabled = false;
         sceneLoaded = false;
     }
 

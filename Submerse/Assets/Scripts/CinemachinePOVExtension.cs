@@ -16,11 +16,13 @@ public class CinemachinePOVExtension : CinemachineExtension
 
     private InputManager inputManager;
     private Vector3 startingRotation;
+    private Vector3 recenterRotation;
 
     protected override void Awake()
     {
         inputManager = InputManager.Instance;
         base.Awake();
+        recenterRotation = new Vector3(0,0,0);
     }
 
     protected override void PostPipelineStageCallback(CinemachineVirtualCameraBase vcam, CinemachineCore.Stage stage, ref CameraState state, float deltaTime)
@@ -49,4 +51,10 @@ public class CinemachinePOVExtension : CinemachineExtension
             }
         }
     }
+
+    public void Recenter()
+    {
+        startingRotation = recenterRotation;
+    }
 }
+

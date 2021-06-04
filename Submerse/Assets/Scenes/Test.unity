@@ -475,6 +475,247 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!1 &797528976
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 797528983}
+  - component: {fileID: 797528982}
+  - component: {fileID: 797528981}
+  - component: {fileID: 797528980}
+  - component: {fileID: 797528979}
+  - component: {fileID: 797528978}
+  m_Layer: 0
+  m_Name: Depthkit Clip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!328 &797528978
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797528976}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: 83196a6a24f5f684dab131e7a71b6166, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: _MainTex
+  m_RenderMode: 4
+  m_AspectRatio: 2
+  m_DataSource: 0
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 0
+  m_TargetAudioSources: []
+  m_DirectAudioVolumes: []
+  m_Url: 
+  m_EnabledAudioTracks: 
+  m_DirectAudioMutes: 
+  m_ControlledAudioTrackCount: 0
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 0
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+--- !u!114 &797528979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797528976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9174990cc1f81c249aa37a2ef816fedb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mediaPlayer: {fileID: 797528978}
+  _audioSource: {fileID: 0}
+--- !u!114 &797528980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797528976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe379743a1e95784294f2979dddc3c37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _meshDensity: 2
+  _metadata:
+    _versionMajor: 0
+    _versionMinor: 3
+    format: perpixel
+    textureWidth: 480
+    textureHeight: 1056
+    boundsCenter: {x: 0, y: 0, z: -0.4660974}
+    boundsSize: {x: 1.2618014, y: 0.94609576, z: 0.27404776}
+    perspectives:
+    - depthImageSize: {x: 2048, y: 1536}
+      depthPrincipalPoint: {x: 1020.35236, y: 779.02124}
+      depthFocalLength: {x: 978.9119, y: 979.176}
+      farClip: 0.6031213
+      nearClip: 0.32907352
+      extrinsics:
+        e00: 0.9999639
+        e01: -0.008481467
+        e02: 0.0004964734
+        e03: 0.03206349
+        e10: 0.008400959
+        e11: 0.9958053
+        e12: 0.09111103
+        e13: 0.00326813
+        e20: 0.001267146
+        e21: 0.09110357
+        e22: -0.9958406
+        e23: -0.0033894163
+        e30: 0
+        e31: 0
+        e32: 0
+        e33: 1
+      extrinsicsInv:
+        e00: 0.99996394
+        e01: 0.008400959
+        e02: 0.001267146
+        e03: -0.032085493
+        e10: -0.008481468
+        e11: 0.99580526
+        e12: 0.09110356
+        e13: -0.0026736876
+        e20: 0.0004964733
+        e21: 0.091111034
+        e22: -0.9958406
+        e23: -0.0036889997
+        e30: 0
+        e31: 0
+        e32: 0
+        e33: 1
+      crop: {x: 0.35544863, y: 0.60685486, z: 0.23331186, w: 0.3427419}
+      clipEpsilon: 0.018244995
+      cameraNormal: {x: 0.0004964734, y: 0.09111103, z: -0.9958406}
+      cameraCenter: {x: 0.03206349, y: 0.00326813, z: -0.0033894163}
+  _depthBrightnessThreshold: 0.5
+  _internalEdgeCutoffAngle: 0.5
+  _shader: {fileID: 4800000, guid: 7a1a03405c8b99f49954ae8a9a232e3a, type: 3}
+--- !u!114 &797528981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797528976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ddf96a4a81ee4fbbb17e6c76d2e7d16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _player: {fileID: 797528979}
+  _renderer: {fileID: 797528980}
+  _depthLuminanceFilter: 0.5
+  _internalEdgeCutoffAngle: 0.5
+  _collider: {fileID: 797528982}
+  _playerType: 4
+  _renderType: 0
+  _metaDataFilePath: 
+  _metaDataFile: {fileID: 4900000, guid: dd27141b0d899774f970d4ace2796fc2, type: 3}
+  _metaDataSourceType: 0
+  _poster: {fileID: 2800000, guid: 866260f377fb395449d668c0a74396a0, type: 3}
+  _metaData:
+    _versionMajor: 0
+    _versionMinor: 3
+    format: perpixel
+    textureWidth: 480
+    textureHeight: 1056
+    boundsCenter: {x: 0, y: 0, z: -0.4660974}
+    boundsSize: {x: 1.2618014, y: 0.94609576, z: 0.27404776}
+    perspectives:
+    - depthImageSize: {x: 2048, y: 1536}
+      depthPrincipalPoint: {x: 1020.35236, y: 779.02124}
+      depthFocalLength: {x: 978.9119, y: 979.176}
+      farClip: 0.6031213
+      nearClip: 0.32907352
+      extrinsics:
+        e00: 0.9999639
+        e01: -0.008481467
+        e02: 0.0004964734
+        e03: 0.03206349
+        e10: 0.008400959
+        e11: 0.9958053
+        e12: 0.09111103
+        e13: 0.00326813
+        e20: 0.001267146
+        e21: 0.09110357
+        e22: -0.9958406
+        e23: -0.0033894163
+        e30: 0
+        e31: 0
+        e32: 0
+        e33: 1
+      extrinsicsInv:
+        e00: 0.99996394
+        e01: 0.008400959
+        e02: 0.001267146
+        e03: -0.032085493
+        e10: -0.008481468
+        e11: 0.99580526
+        e12: 0.09110356
+        e13: -0.0026736876
+        e20: 0.0004964733
+        e21: 0.091111034
+        e22: -0.9958406
+        e23: -0.0036889997
+        e30: 0
+        e31: 0
+        e32: 0
+        e33: 1
+      crop: {x: 0.35544863, y: 0.60685486, z: 0.23331186, w: 0.3427419}
+      clipEpsilon: 0.018244995
+      cameraNormal: {x: 0.0004964734, y: 0.09111103, z: -0.9958406}
+      cameraCenter: {x: 0.03206349, y: 0.00326813, z: -0.0033894163}
+  _needToResetPlayerType: 0
+  _needToRefreshPlayerValues: 0
+  _needToResetRenderType: 0
+  _needToRefreshMetadata: 0
+--- !u!65 &797528982
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797528976}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2618014, y: 0.94609576, z: 0.27404776}
+  m_Center: {x: 0, y: 0, z: -0.4660974}
+--- !u!4 &797528983
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797528976}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.393, y: 3.655, z: -6.361}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &906690811
 GameObject:
   m_ObjectHideFlags: 0
