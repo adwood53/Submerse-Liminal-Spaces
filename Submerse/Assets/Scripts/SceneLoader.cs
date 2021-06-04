@@ -55,8 +55,11 @@ public class SceneLoader : MonoBehaviour
 
     public void UnloadScene()
     {
-        //cam.sceneLoaded = false;
         cam.PrioritiseUI(true);
+
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+
         isOpen = true;
         SceneManager.UnloadSceneAsync(book.currentPage.ToString());
     }
@@ -64,17 +67,21 @@ public class SceneLoader : MonoBehaviour
     void OnSceneLoaded(Scene scene, LoadSceneMode mode) //This method runs when a scene has been loaded
     {
         cam.enabled = true;
+
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+
         SceneManager.SetActiveScene(SceneManager.GetSceneByName(book.currentPage.ToString()));
         anim.SetTrigger("ToggleClose");
         sceneLoaded = true;
-        //cam.sceneLoaded = true;
+   
         cam.PrioritiseUI(false);
         loadingIcon.SetActive(false);
     }
 
     void OnSceneUnloaded(Scene scene) // This method runs when a scene is unloaded
     {
-        cam.GetComponentInChildren<CinemachinePOVExtension>().Recenter();
+        //cam.GetComponentInChildren<CinemachinePOVExtension>().Recenter();
         cam.enabled = false;
         sceneLoaded = false;
     }

@@ -11,6 +11,11 @@ public class HUDManager : MonoBehaviour
     [SerializeField] bool _audioIcon;
     [SerializeField] bool _walkIcon;
     [SerializeField] bool _lookIcon;
+    [SerializeField] string _visualText = "This is a Visual Experience";
+    [SerializeField] string _audioText = "This is an Audio Experience";
+    [SerializeField] string _walkText = "Walk with WASD Keys";
+    [SerializeField] string _lookText = "Look around with a Mouse";
+
     [SerializeField] [Range(0f, 100f)] float timeToFade = 5f;
     [SerializeField] [Range(0.1f, 100f)] float fadeSpeedMultiplier = 1f;
     float fadeSpeed = 0.01f;
@@ -19,6 +24,8 @@ public class HUDManager : MonoBehaviour
     Image[] icons;
     Image[] iconsBackground;
     TMP_Text[] iconText; 
+
+
 
 
     private void Start()
@@ -51,25 +58,25 @@ public class HUDManager : MonoBehaviour
         {
             i++;
             icons[i-1].sprite = sprites[0];
-            iconText[i-1].text = "Visual Experience";
+            iconText[i-1].text = _visualText;
         }
         if (_audioIcon)
         {
             i++;
             icons[i-1].sprite = sprites[1];
-            iconText[i-1].text = "Audio Experience";
+            iconText[i-1].text = _audioText;
         }
         if (_walkIcon)
         {
             i++;
             icons[i-1].sprite = sprites[2];
-            iconText[i-1].text = "WASD Movement";
+            iconText[i-1].text = _walkText;
         }
         if (_lookIcon)
         {
             i++;
             icons[i-1].sprite = sprites[3];
-            iconText[i-1].text = "Look With Left Mouse Button";
+            iconText[i-1].text = _lookText;
         }
 
         switch (i)

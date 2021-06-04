@@ -44,9 +44,6 @@ public class FPSController : MonoBehaviour
         {
             playerVelocity = new Vector3(0f,0f,0f);
             transform.position = new Vector3(0f,1f,0f);
-
-            Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.None;
         }
         else
         {
@@ -55,9 +52,6 @@ public class FPSController : MonoBehaviour
             {
                 playerVelocity.y = 0f;
             }
-
-            Cursor.visible = false;
-            Cursor.lockState = CursorLockMode.Locked;
 
             if (canWalk)
             {
