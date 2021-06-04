@@ -6,7 +6,7 @@
             {
                 "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "buildOutputDirList",
-                "value": "{\"m_Value\":\"C:/Users/IOCT/Documents/GitHub/Submerse-Liminal-Spaces/Submerse/Builds/V0.8.0;C:/Users/ajwoo/OneDrive/Desktop/Submerse/Builds/V.0.1.0;C:/Users/ajwoo/OneDrive/Desktop/Submerse/Builds/MainBuild;C:/Users/ajwoo/OneDrive/Desktop/Submerse/Builds/Test;C:/Users/ajwoo/OneDrive/Desktop/Submerse/Builds/Build3;C:/Users/ajwoo/OneDrive/Desktop/Submerse/Builds/Build2;C:/Users/ajwoo/OneDrive/Desktop/Submerse/Builds/Build1;;;\"}"
+                "value": "{\"m_Value\":\"C:/Users/ajwoo/OneDrive/Desktop/Submerse/Builds/V.0.1.0;C:/Users/ajwoo/OneDrive/Desktop/Submerse/Builds/MainBuild;C:/Users/ajwoo/OneDrive/Desktop/Submerse/Builds/Test;C:/Users/ajwoo/OneDrive/Desktop/Submerse/Builds/Build3;C:/Users/ajwoo/OneDrive/Desktop/Submerse/Builds/Build2;C:/Users/ajwoo/OneDrive/Desktop/Submerse/Builds/Build1;;;;\"}"
             }
         ]
     }
