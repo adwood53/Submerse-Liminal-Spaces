@@ -634,7 +634,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1264550030678094907}
   - component: {fileID: 5146692266453839425}
-  - component: {fileID: 6272831133772057918}
   m_Layer: 0
   m_Name: sitting
   m_TagString: Untagged
@@ -677,18 +676,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &6272831133772057918
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1929586973554945665}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4904bc21edb7ca74e920f56c58efbfb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1999697625297778128
 GameObject:
   m_ObjectHideFlags: 0
