@@ -565,9 +565,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clampInDegrees: {x: 360, y: 80}
-  horizontalSpeed: 0.5
-  verticleSpeed: 0.5
-  smoothing: {x: 30, y: 30}
+  horizontalSpeed: 0.25
+  verticleSpeed: 0.25
+  smoothing: {x: 10, y: 10}
 --- !u!114 &1030713385
 MonoBehaviour:
   m_ObjectHideFlags: 0
