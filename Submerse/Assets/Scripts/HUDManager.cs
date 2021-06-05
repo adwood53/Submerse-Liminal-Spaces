@@ -19,6 +19,11 @@ public class HUDManager : MonoBehaviour
     Image[] icons;
     Image[] iconsBackground;
     TMP_Text[] iconText; 
+    TMP_Text enterText;
+    public string _visualText = "This is a Visual experience";
+    public string _audioText = "This is an Audio experience";
+    public string _walkText = "Walk around with the WASD keys";
+    public string _lookText = "Look around with your Mouse";
 
 
     private void Start()
@@ -45,31 +50,32 @@ public class HUDManager : MonoBehaviour
         iconText[1] = GameObject.Find("Icons/Icon 2/IconText").GetComponent<TMP_Text>();
         iconText[2] = GameObject.Find("Icons/Icon 3/IconText").GetComponent<TMP_Text>();
         iconText[3] = GameObject.Find("Icons/Icon 4/IconText").GetComponent<TMP_Text>();
+        enterText = GameObject.Find("OpenBrochureBTN/Text (TMP)").GetComponent<TMP_Text>();
 
         int i = 0;
         if(_visualIcon)
         {
             i++;
             icons[i-1].sprite = sprites[0];
-            iconText[i-1].text = "Visual Experience";
+            iconText[i-1].text = _visualText;
         }
         if (_audioIcon)
         {
             i++;
             icons[i-1].sprite = sprites[1];
-            iconText[i-1].text = "Audio Experience";
+            iconText[i-1].text = _audioText;
         }
         if (_walkIcon)
         {
             i++;
             icons[i-1].sprite = sprites[2];
-            iconText[i-1].text = "WASD Movement";
+            iconText[i-1].text = _walkText;
         }
         if (_lookIcon)
         {
             i++;
             icons[i-1].sprite = sprites[3];
-            iconText[i-1].text = "Look With Left Mouse Button";
+            iconText[i - 1].text = _lookText;
         }
 
         switch (i)
@@ -117,6 +123,7 @@ public class HUDManager : MonoBehaviour
                 icons[i].color = new Color(icons[i].color.r, icons[i].color.g, icons[i].color.b, icons[i].color.a - fadeSpeed);
                 iconsBackground[i].color = new Color(iconsBackground[i].color.r, iconsBackground[i].color.g, iconsBackground[i].color.b, iconsBackground[i].color.a - fadeSpeed);
             }
+            enterText.color = new Color(enterText.color.r, enterText.color.g, enterText.color.b, enterText.color.a - fadeSpeed);
             yield return new WaitForSeconds(.1f);
         }
     }

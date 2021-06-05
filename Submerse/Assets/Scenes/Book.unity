@@ -565,8 +565,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clampInDegrees: {x: 360, y: 80}
-  horizontalSpeed: 1
-  verticleSpeed: 1
+  horizontalSpeed: 0.5
+  verticleSpeed: 0.5
   smoothing: {x: 30, y: 30}
 --- !u!114 &1030713385
 MonoBehaviour:
@@ -1716,8 +1716,8 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -70.597, y: -101.55}
-  m_SizeDelta: {x: 398.25, y: 795.5637}
-  m_Pivot: {x: 0, y: 0.2502942}
+  m_SizeDelta: {x: 720, y: 1443.7437}
+  m_Pivot: {x: 0, y: 0.24935174}
 --- !u!224 &1340537088
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1735,7 +1735,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 238.49512, y: -106.38922}
-  m_SizeDelta: {x: 398.25, y: 1332.0004}
+  m_SizeDelta: {x: 720, y: 2430.0005}
   m_Pivot: {x: 0.000000020489097, y: 0.12}
 --- !u!224 &1340537840
 RectTransform:
@@ -1754,7 +1754,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 238.49512, y: -105.37775}
-  m_SizeDelta: {x: 1240.5001, y: 1332.0004}
+  m_SizeDelta: {x: 2250, y: 2430.0005}
   m_Pivot: {x: 1, y: 0.12}
 --- !u!224 &1340572270
 RectTransform:
@@ -1773,8 +1773,8 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 70.597, y: -101.54}
-  m_SizeDelta: {x: 398.25, y: 795.5637}
-  m_Pivot: {x: 1, y: 0.2502942}
+  m_SizeDelta: {x: 720, y: 1443.7437}
+  m_Pivot: {x: 1, y: 0.24935174}
 --- !u!224 &1340588008
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2518,8 +2518,8 @@ MonoBehaviour:
   m_VerticalAxis:
     Value: 0
     m_SpeedMode: 0
-    m_MaxSpeed: 200
-    m_AccelTime: 0.1
+    m_MaxSpeed: 10
+    m_AccelTime: 0.2
     m_DecelTime: 0.1
     m_InputAxisName: Mouse Y
     m_InputAxisValue: 0
@@ -2542,8 +2542,8 @@ MonoBehaviour:
   m_HorizontalAxis:
     Value: 0
     m_SpeedMode: 0
-    m_MaxSpeed: 200
-    m_AccelTime: 0.1
+    m_MaxSpeed: 10
+    m_AccelTime: 0.2
     m_DecelTime: 0.1
     m_InputAxisName: Mouse X
     m_InputAxisValue: 0
