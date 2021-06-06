@@ -29066,6 +29066,7 @@ MonoBehaviour:
   anim: {fileID: 861674241}
   vp: {fileID: 113944923}
   skin: {fileID: 1058531330}
+  waitTime: 0.7
 --- !u!1 &880052895
 GameObject:
   m_ObjectHideFlags: 0

@@ -55,6 +55,11 @@ public class InputManager : MonoBehaviour
         return playerControls.Player.MousePosition.ReadValue<Vector2>();
     }
 
+    public float getScroll()
+    {
+        return playerControls.Player.Zoom.ReadValue<float>();
+    }
+
     public bool PlayerJumpedThisFrame()
     {
         return playerControls.Player.Jump.triggered;
@@ -73,4 +78,5 @@ public class InputManager : MonoBehaviour
     {
         return playerControls.Player.Exit.triggered;
     }
+
 }

@@ -9,6 +9,7 @@ public class playonvid : MonoBehaviour
     public Animator anim;
     public VideoPlayer vp;
     public SkinnedMeshRenderer skin;
+    [Range(0.0f, 2.0f)]public float waitTime = 0.3f;
 
     // Update is called once per frame
     void Update()
@@ -22,7 +23,8 @@ public class playonvid : MonoBehaviour
 
     IEnumerator appear()
     {
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(waitTime);
         skin.enabled = true;
+        Destroy(this);
     }
 }
